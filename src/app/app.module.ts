@@ -5,9 +5,9 @@ import { SocketIoConfig, SocketIoModule } from 'ngx-socket-io';
 import { AppComponent } from './app.component';
 
 const config: SocketIoConfig = {
-  url: 'http://localhost:3000',
+  url: '/',
   options: {
-    transports: ['websocket'],
+    transports: ['polling', 'websocket'],
   },
 };
 
